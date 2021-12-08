@@ -1,0 +1,36 @@
+
+.btn{
+    width: 9.8rem ;
+    
+}
+h1{
+background-color: blue;
+}
+form{
+    margin: auto;
+}
+body{
+    /* background: #000000;  fallback for old browsers */
+    /* background: linear-gradient(to right, #434343, #000000) ;  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    overflow: hidden;
+    
+}
+.contenaire{
+    background: linear-gradient(to right, #fd746c, #ff9068);
+    width: 100rem;
+    height: 200vh;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    left: 50rem;
+    z-index: -1;
+
+}
+.form1{
+    transform: translateX(-20rem);
+    width: 20rem;
+}
