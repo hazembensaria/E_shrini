@@ -25,7 +25,7 @@ $src="./img/".$res[0][0];
 </head>
 <body >
     
-    <nav class="navbar navbar-expand-lg " style="position: relative; top:6rem ;background-color:rgb(240,240,240);color:black;margin-bottom:0" >
+    <nav class="navbar navbar-expand-lg " style="position: relative; top:6rem ;background-color:rgb(240,240,240);color:black;margin-bottom:0;border-bottom:1px solid lightgray" >
         <div class="container-fluid">
           <a class="navbar-brand" href="http://localhost/mes_traveaux/test/user.php" style="color:black;margin-left:20rem;font-weight:bold"><span style="color:goldenrod"><i class="fas fa-shopping-basket " style="margin-right:5px"></i>E_</span>shrini</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@ $src="./img/".$res[0][0];
               <div style="color: black;display:inline;margin-right:5px;">
             <?php echo $_SESSION['username'] ?>
               </div>
-               <img src=<?php echo '"'.$src.'"' ;?> style="width: 30px;height: 30px; border-radius: 50%;display:inline;margin-right:5px;">
+              <a href="http://localhost/mes_traveaux/test/profil.php"> <img src=<?php echo '"'.$src.'"' ;?> style="width: 30px;height: 30px; border-radius: 50%;display:inline;margin-right:5px;"></a>
                
             </div >
             <div style="width: 40px;height:40px;border-radius:50% ;background:rgba(255, 255,255);display:flex;justify-content:center;align-items:center;margin-left:5px">
@@ -57,12 +57,14 @@ $src="./img/".$res[0][0];
             </i>
             </div>
             <div style="width: 40px;height:40px;border-radius:50% ;background:rgba(255, 255,255);display:flex;justify-content:center;align-items:center;margin-left:5px">
-            <i class="fas fa-shopping-cart" style="color:black;font-size:large;position:relative">
+            <a href="http://localhost/mes_traveaux/test/panier.php"><i class="fas fa-shopping-cart" style="color:black;font-size:large;position:relative">
             <span class="position-absolute top-0 start-100 translate-middle p-1 bg-warning  rounded-circle" >
-            </i>
+            </i></a>
             </div>
           </div>
         </div>
+        
       </nav>
+      <hr >
 </body>
 </html>

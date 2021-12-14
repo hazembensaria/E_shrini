@@ -18,7 +18,7 @@ $cnx= new connexion();
 $pdo=$cnx->getConnexion();
 $img=$_FILES['img']['name'];
 // echo $img;
- $sql="insert into produit(name_prod,desc_prod,prix_prod,img_prod,qte_prod) values('".$_POST['name']."','".$_POST['desc']."',".$_POST['prix'].",'".$img."',".$_POST['qte'].")";
+ $sql="insert into produit(name_prod,desc_prod,prix_prod,img_prod,qte_prod,id_categori) values('".$_POST['name']."','".$_POST['desc']."',".$_POST['prix'].",'".$img."',".$_POST['qte'].",".$_POST['categ'].")";
  $res=$pdo->exec($sql);
 //  echo var_dump($res);
  if($res){
@@ -81,7 +81,7 @@ $img=$_FILES['img']['name'];
 </div>
 <div class="mb-3">
   <label for="exampleInputPassword1" class="form-label">prix</label>
-  <input type="password" class="form-control" name="prix" require>
+  <input type="text" class="form-control" name="prix" require>
 </div>
 <div class="mb-3">
   <label for="exampleInputPassword1" class="form-label">prduct img</label>
@@ -90,6 +90,10 @@ $img=$_FILES['img']['name'];
 <div class="mb-3">
   <label for="exampleInputPassword1" class="form-label">quantite</label>
   <input type="text" class="form-control" name="qte" id="" placeholder="your image">
+</div>
+<div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">categori</label>
+  <input type="text" class="form-control" name="categ" require>
 </div>
 <button type="submit" class="btn btn-primary" id="b1">add</button>
     </form>
